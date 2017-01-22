@@ -60,3 +60,12 @@ For further information on usage please see the wiki page:
 
 http://cmusphinx.sourceforge.net/wiki/tutorialandroid
 
+
+
+
+
+```
+swig -I../sphinxbase/include -I../sphinxbase/swig -java -package edu.cmu.pocketsphinx  -outdir build/generated-src/java -o jni/sphinxbase_wrap.c ../sphinxbase/swig/sphinxbase.i
+swig -I../sphinxbase/swig -I../pocketsphinx/include -I../pocketsphinx/swig -java -package edu.cmu.pocketsphinx -outdir build/generated-src/java \
+        -o jni/pocketsphinx_wrap.c ../pocketsphinx/swig/pocketsphinx.i
+```
